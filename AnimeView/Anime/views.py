@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
 
 def home(request):
-    return HttpResponse("Welcome to AnimeView!")
+    temp=loader.get_template('Index.html')
+    return HttpResponse(temp.render())
