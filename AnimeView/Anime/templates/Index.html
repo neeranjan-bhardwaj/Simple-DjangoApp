@@ -99,42 +99,14 @@
 <body>
     <div class="container">
         <h1>Bais design front page</h1>
-        
-        <div class="content-box">
-            <div class="anime-card">
-                <div class="anime-image">IMG</div>
+            {%for x in test%}
+            <a href={{x.id}} class="anime-card">
+                <div class="anime-image">{{x.Img}}</div>
                 <div class="anime-info">
-                    <div class="anime-title">Anime Name</div>
-                    <div class="anime-description">Small description of anime</div>
+                    <div class="anime-title">{{x.Name}}</div>
                 </div>
-            </div>
-
-            <div class="anime-card">
-                <div class="anime-image">IMG</div>
-                <div class="anime-info">
-                    <div class="anime-title">Anime Name</div>
-                    <div class="anime-description">Small description of anime</div>
-                </div>
-            </div>
-
-            <div class="anime-card">
-                <div class="anime-image">IMG</div>
-                <div class="anime-info">
-                    <div class="anime-title">Anime Name</div>
-                    <div class="anime-description">Small description of anime</div>
-                </div>
-            </div>
-
-            <div class="anime-card">
-                <div class="anime-image">IMG</div>
-                <div class="anime-info">
-                    <div class="anime-title">Anime Name</div>
-                    <div class="anime-description">Small description of anime</div>
-                </div>
-            </div>
-
-            <div class="info-bar"></div>
-            <div class="info-bar"></div>
+            </a>
+            {%endfor%}
         </div>
     </div>
 </body>

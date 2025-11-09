@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Detail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8a97 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .anime-header {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .main-image {
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .anime-title-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .anime-title {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .description-box {
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .description-title {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .description-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            line-height: 1.6;
+            min-height: 80px;
+        }
+
+        .other-images {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .other-image-box {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <div class="anime-header">
+                <div class="main-image">IMG</div>
+                <div class="anime-title-section">
+                    <h1 class="anime-title">Anime name in bold</h1>
+                </div>
+            </div>
+
+            <div class="description-box">
+                <div class="description-title">Anime full discration</div>
+                <div class="description-text"></div>
+            </div>
+
+            <div class="other-images">
+                <div class="other-image-box">Other<br>IMG</div>
+                <div class="other-image-box"></div>
+                <div class="other-image-box"></div>
+                <div class="other-image-box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
